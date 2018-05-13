@@ -1,26 +1,27 @@
 # 欢迎查阅Rest Assured（API接口自动化测试框架体系）
+
+
+### Rest Assured
 ![](https://testerhome.com/uploads/photo/2018/687752c9-83c2-4454-88f6-db4262e55822.png!large)
 
-**现在，越来越多的 Web 应用转向了 RESTful 的架构，很多产品和应用暴露给用户的往往就是一组 REST API，这样有一个好处，用户可以根据需要，调用不同的 API，整合出自己的应用出来。从这个角度来讲，Web 开发的成本会越来越低，人们不必再维护自己的信息孤岛，而是使用 REST API 互联互通
-那么，作为 REST API 的提供者，如何确保 API 的稳定性与正确性呢？全面系统的测试是必不可少的。Java 程序员常常借助于 JUnit 来测试自己的 REST API，不，应该这样说，Java 程序员常常借助于 JUnit 来测试 REST API 的实现！从某种角度来说，这是一种“白盒测试”，Java 程序员清楚地知道正在测试的是哪个类、哪个方法，而不是从用户的角度出发，测试的是哪个 REST API
-Rest-Assured 是一套由 Java 实现的 REST API 测试框架，它是一个轻量级的 REST API 客户端，可以直接编写代码向服务器端发起 HTTP 请求，并验证返回结果；它的语法非常简洁，是一种专为测试 REST API 而设计的 DSL
-使用 Rest-Assured 测试 REST API，就和真正的用户使用 REST API 一样，只不过 Rest-Assured 让这一切变得自动化了**
+    现在，越来越多的 Web 应用转向了 RESTful 的架构，很多产品和应用暴露给用户的往往就是一组 REST API，这样有一个好处，用户可以根据需要，调用不同的 API，整合出自己的应用出来。从这个角度来讲，Web 开发的成本会越来越低，人们不必再维护自己的信息孤岛，而是使用 REST API 互联互通
+    那么，作为 REST API 的提供者，如何确保 API 的稳定性与正确性呢？全面系统的测试是必不可少的。Java 程序员常常借助于 JUnit 来测试自己的 REST API，不，应该这样说，Java 程序员常常借助于 JUnit 来测试 REST API 的实现！从某种角度来说，这是一种“白盒测试”，Java 程序员清楚地知道正在测试的是哪个类、哪个方法，而不是从用户的角度出发，测试的是哪个 REST API
+    Rest-Assured 是一套由 Java 实现的 REST API 测试框架，它是一个轻量级的 REST API 客户端，可以直接编写代码向服务器端发起 HTTP 请求，并验证返回结果；它的语法非常简洁，是一种专为测试 REST API 而设计的 DSL
+    使用 Rest-Assured 测试 REST API，就和真正的用户使用 REST API 一样，只不过 Rest-Assured 让这一切变得自动化了**
 
-### 源码地址：
-Gitee地址：https://gitee.com/hagyao520/RestAssured.git
-GitHub地址：https://github.com/hagyao520/RestAssured.git
+
 
 ### 框架介绍：
-- **Java + Rest Assured + Maven + TestNG + JDBC + Excel+ Git + +Ant + Jenkins** 
-   - 使用Java作为项目编程语言
-   - 使用Rest Assured作为API接口自动化项目底层服务驱动框架
-   - 使用Maven作为项目类型，方便管理架包
-   - 使用TestNG作为项目运行框架，方便执行测试用例，生成测试报告
-   - 使用JDBC作为数据库管理工具，方便连接数据库，执行SQL
-   - 使用Excel作为用例管理工具，方便编写测试用例，维护测试脚本
-   - 使用Git作为仓库管理工具，方便管理项目代码
-   - 使用Ant作为Java的build打包工具，方便项目代码打包
-   - 使用Jenkins作为自动化持续集成平台，方便自动编译，自动打包，自动运行测试脚本，邮件发送测试报告
+    Java + Rest Assured + Maven + TestNG + JDBC + Excel+ Git + +Ant + Jenkins** 
+        •  使用Java作为项目编程语言
+        •  使用Rest Assured作为API接口自动化项目底层服务驱动框架
+        •  使用Maven作为项目类型，方便管理架包
+        •  使用TestNG作为项目运行框架，方便执行测试用例，生成测试报告
+        •  使用JDBC作为数据库管理工具，方便连接数据库，执行SQL
+        •  使用Xml作为用例管理工具，方便编写测试用例，维护测试脚本
+        •  使用Git作为仓库管理工具，方便管理项目代码
+        •  使用Ant作为Java的build打包工具，方便项目代码打包
+        •  使用Jenkins作为自动化持续集成平台，方便自动编译，自动打包，自动运行测试脚本，邮件发送测试报告
 
 ### 主要功能：
     1. 实现了基于Rest Assured，HttpClient等常用接口请求方法的二次封装，包括(SendPost，SendGet，GetJsonResult)等，使用起来更简便
@@ -43,9 +44,8 @@ GitHub地址：https://github.com/hagyao520/RestAssured.git
   
 ### 注意事项：
  - 工程项目编码需要设置成UTF-8，否则会出现中文乱码情况
----
+
 ### 一、创建测试对象处理程序类，例如【LoginHandler.java】
-```scss
 package com.sales.webapi.handler;
 
 import java.io.IOException;
@@ -486,11 +486,9 @@ public class LoginHandler {
       }
   }
 }
-```
 
----
+
 ### 二、创建测试对象脚本用例类，例如【LoginTest.java】
-```scss
     package TestCase;
 
     import org.testng.annotations.AfterTest;
@@ -533,21 +531,19 @@ public class LoginHandler {
             LoginHandler.GetCaseInfo(3);
         }
     }
-```
+
 ![](https://testerhome.com/uploads/photo/2018/6142f15f-a384-406e-82d9-eeadb7f73a37.png!large)
 ![](https://testerhome.com/uploads/photo/2018/126d205b-92da-4bd0-b783-65bad0071367.png!large)
 #### 以上只是单个案例，相关的接口参数定义根据具体接口文档进行设置，是不是很简单，和写测试用例基本一致
  - 具体脚本编方法请参考: https://pan.baidu.com/s/1fBMX2ET7oHzZW-hsvCwk-A
 
 ### 三、Rest Assured测试用例文档配置：
-```scss
     public static void GetExcelInstance() {
         logger.info(LoginHandler.class);
         System.out.println(LoginHandler.class);
         ExcelUtil.getInstance().setFilePath("src/test/resources/Excel/GiveU.Sales.WebApi.xlsx");
         ExcelUtil.getInstance().setSheetName("Login");
     }
-```
 
  - 测试执行时需要在指定对应Excel测试用例文档路径和Sheet工作表名，当前为GiveU.Sales.WebApi.xlsx，和Login工作表
 
@@ -559,7 +555,6 @@ public class LoginHandler {
  - 测试报告分为两种，一种是TestNG自带的TestngReport测试报告，另外一种则是调用ExtentReports生成的报告，第二种更加美观
 
 #### [TestngReport](https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
-```scss
  <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Rest Assured测试报告" parallel="false" configfailurepolicy ="continue">
         <test name="销售服务系统-登录接口测试场景点" junit="false" verbose="3" parallel="false" thread-count="5" annotations="javadoc" time-out="60000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true" allow-return-values="true">
@@ -579,11 +574,10 @@ public class LoginHandler {
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         </listeners>      
 </suite>
-```
+
 (https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
 
 #### [ExtentReports](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
-```scss
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" verbose="1" preserve-order="true" parallel="false">
         <suite-files>
@@ -595,7 +589,7 @@ public class LoginHandler {
         <!-- C:\Windows\System32\drivers\etc
         151.139.237.11    cdn.rawgit.com -->
 </suite>
-```
+
 (https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
 
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
