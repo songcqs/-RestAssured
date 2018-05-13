@@ -4,10 +4,10 @@
 ### Rest Assured
 ![](https://testerhome.com/uploads/photo/2018/687752c9-83c2-4454-88f6-db4262e55822.png!large)
 
-    现在，越来越多的 Web 应用转向了 RESTful 的架构，很多产品和应用暴露给用户的往往就是一组 REST API，这样有一个好处，用户可以根据需要，调用不同的 API，整合出自己的应用出来。从这个角度来讲，Web 开发的成本会越来越低，人们不必再维护自己的信息孤岛，而是使用 REST API 互联互通
-    那么，作为 REST API 的提供者，如何确保 API 的稳定性与正确性呢？全面系统的测试是必不可少的。Java 程序员常常借助于 JUnit 来测试自己的 REST API，不，应该这样说，Java 程序员常常借助于 JUnit 来测试 REST API 的实现！从某种角度来说，这是一种“白盒测试”，Java 程序员清楚地知道正在测试的是哪个类、哪个方法，而不是从用户的角度出发，测试的是哪个 REST API
-    Rest-Assured 是一套由 Java 实现的 REST API 测试框架，它是一个轻量级的 REST API 客户端，可以直接编写代码向服务器端发起 HTTP 请求，并验证返回结果；它的语法非常简洁，是一种专为测试 REST API 而设计的 DSL
-    使用 Rest-Assured 测试 REST API，就和真正的用户使用 REST API 一样，只不过 Rest-Assured 让这一切变得自动化了**
+        现在，越来越多的 Web 应用转向了 RESTful 的架构，很多产品和应用暴露给用户的往往就是一组 REST API，这样有一个好处，用户可以根据需要，调用不同的 API，整合出自己的应用出来。从这个角度来讲，Web 开发的成本会越来越低，人们不必再维护自己的信息孤岛，而是使用 REST API 互联互通
+        那么，作为 REST API 的提供者，如何确保 API 的稳定性与正确性呢？全面系统的测试是必不可少的。Java 程序员常常借助于 JUnit 来测试自己的 REST API，不，应该这样说，Java 程序员常常借助于 JUnit 来测试 REST API 的实现！从某种角度来说，这是一种“白盒测试”，Java 程序员清楚地知道正在测试的是哪个类、哪个方法，而不是从用户的角度出发，测试的是哪个 REST API
+        Rest-Assured 是一套由 Java 实现的 REST API 测试框架，它是一个轻量级的 REST API 客户端，可以直接编写代码向服务器端发起 HTTP 请求，并验证返回结果；它的语法非常简洁，是一种专为测试 REST API 而设计的 DSL
+        使用 Rest-Assured 测试 REST API，就和真正的用户使用 REST API 一样，只不过 Rest-Assured 让这一切变得自动化了
 
 
 
@@ -555,8 +555,8 @@ public class LoginHandler {
  - 测试报告分为两种，一种是TestNG自带的TestngReport测试报告，另外一种则是调用ExtentReports生成的报告，第二种更加美观
 
 #### [TestngReport](https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
- <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Rest Assured测试报告" parallel="false" configfailurepolicy ="continue">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <suite name="Rest Assured测试报告" parallel="false" configfailurepolicy ="continue">
         <test name="销售服务系统-登录接口测试场景点" junit="false" verbose="3" parallel="false" thread-count="5" annotations="javadoc" time-out="60000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true" allow-return-values="true">
             <classes>
                 <class name="TestCase.LoginTest"/>
@@ -578,8 +578,8 @@ public class LoginHandler {
 (https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
 
 #### [ExtentReports](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" verbose="1" preserve-order="true" parallel="false">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <suite name="Suite" verbose="1" preserve-order="true" parallel="false">
         <suite-files>
             <suite-file path="TestngReport.xml"></suite-file>
         </suite-files>
@@ -588,10 +588,8 @@ public class LoginHandler {
         </listeners> 
         <!-- C:\Windows\System32\drivers\etc
         151.139.237.11    cdn.rawgit.com -->
-</suite>
-
+    </suite>
 (https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
-
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
 
