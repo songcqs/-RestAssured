@@ -575,7 +575,7 @@
         </listeners>      
 </suite>
 
-(https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
+![](https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
 
 #### [ExtentReports](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
     <?xml version="1.0" encoding="UTF-8"?>
@@ -589,7 +589,8 @@
         <!-- C:\Windows\System32\drivers\etc
         151.139.237.11    cdn.rawgit.com -->
     </suite>
-(https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
+
+![](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
 
