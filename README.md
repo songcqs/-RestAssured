@@ -1,6 +1,5 @@
 # 欢迎查阅Rest Assured（API接口自动化测试框架体系）
 
-
 ### Rest Assured
 ![](https://testerhome.com/uploads/photo/2018/687752c9-83c2-4454-88f6-db4262e55822.png!large)
 
@@ -8,8 +7,6 @@
     那么，作为 REST API 的提供者，如何确保 API 的稳定性与正确性呢？全面系统的测试是必不可少的。Java 程序员常常借助于 JUnit 来测试自己的 REST API，不，应该这样说，Java 程序员常常借助于 JUnit 来测试 REST API 的实现！从某种角度来说，这是一种“白盒测试”，Java 程序员清楚地知道正在测试的是哪个类、哪个方法，而不是从用户的角度出发，测试的是哪个 REST API
     Rest-Assured 是一套由 Java 实现的 REST API 测试框架，它是一个轻量级的 REST API 客户端，可以直接编写代码向服务器端发起 HTTP 请求，并验证返回结果；它的语法非常简洁，是一种专为测试 REST API 而设计的 DSL
     使用 Rest-Assured 测试 REST API，就和真正的用户使用 REST API 一样，只不过 Rest-Assured 让这一切变得自动化了
-
-
 
 ### 框架介绍：
     Java + Rest Assured + Maven + TestNG + JDBC + Excel+ Git + +Ant + Jenkins** 
@@ -536,7 +533,8 @@
 ![](https://testerhome.com/uploads/photo/2018/126d205b-92da-4bd0-b783-65bad0071367.png!large)
 #### 以上只是单个案例，相关的接口参数定义根据具体接口文档进行设置，是不是很简单，和写测试用例基本一致
  - 具体脚本编方法请参考: https://pan.baidu.com/s/1fBMX2ET7oHzZW-hsvCwk-A
-
+ - 官方使用指南请参考: https://testerhome.com/topics/7060
+ 
 ### 三、Rest Assured测试用例文档配置：
     public static void GetExcelInstance() {
         logger.info(LoginHandler.class);
