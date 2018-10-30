@@ -48,7 +48,7 @@
  - 工程项目编码需要设置成UTF-8，否则会出现中文乱码情况
 
  ---
-### 一、创建测试对象处理程序类，例如【LoginHandler.java】
+### 一、创建测试对象处理程序类，例如【Login_Handler.java】
     package com.jmoney.luckeylink.handler;
 
     import java.io.IOException;
@@ -153,7 +153,6 @@
         
             try {
                 if (data != null) {
-//                    for (int i = 0; i < data.size(); i++) {
                       int i = ID;
                       Map<String, String> map = data.get(i);
                       String Sql =map.get("userId");
@@ -161,7 +160,6 @@
                       logger.info("根据数据库查询结果, 开始写入预期值【Waiting...】");
                       System.out.println("根据数据库查询结果, 开始写入预期值【Waiting...】");
                   
-//                      String $id_Exp= DataBase_Util.GetSqlResult(DataVersion, Sql,"$id_Exp");
                       MobileApiToolsUtil.writeResult(TITLE_LINE_INDEX-1, TITLE_LINE_INDEX + i, "$id_Exp", "2");
                   
                       String phone_Exp= Login_Controller.GetSqlResult(DataVersion, Sql,"phone");
@@ -179,7 +177,6 @@
                       String userName_Exp= Login_Controller.GetSqlResult(DataVersion, Sql,"userName");
                       MobileApiToolsUtil.writeResult(TITLE_LINE_INDEX-1, TITLE_LINE_INDEX + i, "userName_Exp", userName_Exp);
                   
-//                   String identification_Exp= DataBase_Util.GetSqlResult(DataVersion, Sql,"identification");
                       MobileApiToolsUtil.writeResult(TITLE_LINE_INDEX-1, TITLE_LINE_INDEX + i, "identification_Exp", "string");
                   
                       String photoName_Exp= Login_Controller.GetSqlResult(DataVersion, Sql,"photoName");
@@ -189,7 +186,6 @@
                      System.out.println("对应预期值,写入成功【OK】");
                      System.out.println("==================================================================");
                    }
-//                } 
             }catch (IOException e) {
                 e.printStackTrace();
             }
@@ -433,7 +429,7 @@
       }
 
  ---
-### 二、创建测试对象脚本用例类，例如【LoginTest.java】
+### 二、创建测试对象脚本用例类，例如【Login.java】
     package TestCases;
 
     import org.testng.annotations.AfterTest;
@@ -540,7 +536,7 @@
                 </methods>
         </classes>
     </test>
-    <!-- —————————————————————— 分           界             线  ————————————————————————— -->
+    <!-- —————————————————————————— 分           界             线  ———————————————————————————— -->
     <!-- 调用的监听 -->    
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -548,7 +544,7 @@
     </listeners>      
 </suite>
 
-![](https://testerhome.com/uploads/photo/2018/8da0567e-881e-4e01-af90-3928b1456d8e.png!large)
+![](/uploads/photo/2018/50f138e2-061d-477e-abc8-9010faf50558.png!large)
 
  ---
 #### [ExtentReports](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
@@ -564,7 +560,7 @@
         151.139.237.11    cdn.rawgit.com -->
     </suite>
 
-![](https://testerhome.com/uploads/photo/2018/128a4480-580f-43ae-af52-5087ae0102e6.png!large)
+![](/uploads/photo/2018/d709087f-0a50-4a2b-b3c6-39085a02977e.png!large)
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
 
