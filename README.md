@@ -495,7 +495,7 @@
 ![](https://testerhome.com/uploads/photo/2018/6142f15f-a384-406e-82d9-eeadb7f73a37.png!large)
 ![](https://testerhome.com/uploads/photo/2018/126d205b-92da-4bd0-b783-65bad0071367.png!large)
 #### 以上只是单个案例，相关的接口参数定义根据具体接口文档进行设置，是不是很简单，和写测试用例基本一致
- - 具体脚本编方法请参考: https://pan.baidu.com/s/1fBMX2ET7oHzZW-hsvCwk-A
+ - 具体脚本编方法请参考: https://pan.baidu.com/s/1MnC38bdPKpyFu_8nsjdMsA
  - 官方使用指南请参考: https://testerhome.com/topics/7060
 
  --- 
@@ -560,8 +560,8 @@
         151.139.237.11    cdn.rawgit.com -->
     </suite>
 
-![](https://testerhome.com/uploads/photo/2018/d709087f-0a50-4a2b-b3c6-39085a02977e.png!large)
- - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
+![](https://testerhome.com/uploads/photo/2018/3ff20fd0-4768-473e-9837-d078fa00c067.png!large)
+ - 第二种测试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
 
  ---
