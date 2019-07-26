@@ -14,37 +14,37 @@ public class Login {
     }
     
     @Test
-	public void Case1() throws Exception{
+	public void case1() throws Exception{
     	Login_Handler.Login(1);	
 	}
 	
     @Test
-	public void Case2() throws Exception{
+	public void case2() throws Exception{
     	Login_Handler.Login(2);	
 	}
     
     @Test
-	public void Case3() throws Exception{
+	public void case3() throws Exception{
     	Login_Handler.Login(3);	
 	}
     
     @Test
-	public void Case4() throws Exception{
+	public void case4() throws Exception{
     	Login_Handler.Login(4);	
 	}
     
     @Test
-	public void Case5() throws Exception{
+	public void case5() throws Exception{
     	Login_Handler.Login(5);	
 	}
     
     @Test
-	public void Case6() throws Exception{
+	public void case6() throws Exception{
     	Login_Handler.Login(6);	
 	}
     
     @Test
-	public void Case7() throws Exception{
+	public void case7() throws Exception{
     	Login_Handler.Login(7);	
 	}
     
